@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[STORE] BAD PANDA CLUBS </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .nav-link.active {
+            color: #facc15;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+    <!-- Thanh điều hướng -->
+    <nav class="fixed top-0 left-0 w-full bg-black py-4 px-6 flex justify-between items-center z-50">
+        <h1 class="text-white font-bold text-lg">[STORE] BAD PANDA CLUBS - FIVEM SERVICES</h1>
+        <ul class="flex space-x-6">
+            <li class="nav-item"><a href="#home-section" class="nav-link active">Trang chủ</a></li>
+            <li class="nav-item"><a href="#project-section" class="nav-link">Dự án</a></li>
+            <li class="nav-item"><a href="#team-section" class="nav-link">Thành viên</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Trang chủ -->
+    <section id="home-section" class="h-screen flex items-center justify-center text-center px-10">
+        <div class="w-full md:w-1/2">
+            <p class="text-sm uppercase">Tại đây chúng tôi có</p>
+            <h1 class="text-4xl font-bold text-yellow-500">Tất Cả Bạn Cần</h1>
+            <span id="typed-text" class="text-xl font-bold"></span>
+            <br>
+            <a href="https://discord.gg/XpWfunwB" class="mt-4 inline-block bg-yellow-500 text-black px-6 py-2 rounded-full font-bold hover:bg-yellow-600">Liên Hệ Công Việc</a>
+        </div>
+        <div class="w-full md:w-1/2 hidden md:block">
+            <img src="images/panda.png" alt="panda" class="w-96 mx-auto">
+        </div>
+    </section>
+
+    <!-- Dự Án -->
+    <section id="project-section" class="h-screen flex flex-col items-center justify-center text-center px-10">
+        <h2 class="text-3xl font-bold text-yellow-500">Dự Án</h2>
+        <p>Dưới đây là các dự án Server FiveM Và Server Discord</p>
+        <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Neko Town -->
+            <div class="bg-gray-800 p-6 rounded-lg">
+                <img src="images/neko.png" alt="Neko Town" class="w-32 mx-auto">
+                <h3 class="font-bold text-white mt-4">NEKO TOWN</h3>
+                <p>Máy chủ nhập vai.</p>
+                <p class="text-yellow-500 font-bold">Chưa Hoạt Động</p>
+                <a href="https://discord.gg/wAmChcdv" 
+                   class="inline-block bg-blue-500 text-white px-4 py-2 mt-3 rounded-lg hover:bg-blue-700">
+                   Tham gia Discord
+                </a>
+            </div>
+
+            <!-- Grove Street -->
+            <div class="bg-gray-800 p-6 rounded-lg">
+                <img src="images/gsg.png" alt="GSG" class="w-32 mx-auto">
+                <h3 class="font-bold text-white mt-4">Grove Street Gang</h3>
+                <p>Máy chủ Gia Tộc Grove Street.</p>
+                <p class="text-green-500 font-bold">Đang Hoạt Động</p>
+                <a href="https://discord.gg/hHWYQzMF" 
+                   class="inline-block bg-blue-500 text-white px-4 py-2 mt-3 rounded-lg hover:bg-blue-700">
+                   Tham gia Discord
+                </a>
+            </div>
+
+            <!-- BT STUDIO -->
+            <div class="bg-gray-800 p-6 rounded-lg">
+                <img src="images/bt.png" alt="BT STUDIO" class="w-32 mx-auto">
+                <h3 class="font-bold text-white mt-4">BT STUDIO</h3>
+                <p>Máy chủ STORE Nhỏ Của Cún Con.</p>
+                <p class="text-green-500 font-bold">Đang Hoạt Động</p>
+                <a href="https://discord.gg/hHWYQzMF" 
+                   class="inline-block bg-blue-500 text-white px-4 py-2 mt-3 rounded-lg hover:bg-blue-700">
+                   Tham gia Discord
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Thành viên -->
+    <section id="team-section" class="h-screen flex flex-col items-center justify-center text-center px-10">
+        <h2 class="text-3xl font-bold text-yellow-500">Thành Viên</h2>
+        <p>Những người đã góp phần xây dựng STORE Đến Tận Ngày Nay.</p>
+        <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-6 mt-8">
+            <!-- Nguyễn Trí -->
+            <div class="bg-gray-900 p-6 rounded-lg text-center">
+                <img src="images/cuncon.png" alt="Nguyễn Trí" class="w-20 mx-auto rounded-full">
+                <h3 class="text-xl font-bold mt-4">Cún Con</h3>
+                <p class="text-yellow-500 font-semibold">Developer</p>
+            </div>
+
+            <!-- Decoyy -->
+            <div class="bg-gray-900 p-6 rounded-lg text-center">
+                <img src="images/decoyy.png" alt="Decoyy" class="w-20 mx-auto rounded-full">
+                <h3 class="text-xl font-bold mt-4">Decoyy</h3>
+                <p class="text-yellow-500 font-semibold">Designer</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var options = {
+            strings: ["Game Developer", "Game Designer 2D & 3D", "Map", "Desginer Car & Cloth", "Script", "Có Nhận làm Nhạc"],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true
+        };
+        var typed = new Typed("#typed-text", options);
+
+        $(document).ready(function() {
+            $('.nav-link').on('click', function() {
+                $('.nav-link').removeClass('active');
+                $(this).addClass('active');
+            });
+        });
+    </script>
+</body>
+</html>
